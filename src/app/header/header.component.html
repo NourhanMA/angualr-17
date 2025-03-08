@@ -1,0 +1,22 @@
+<div class="px-4 py-2 d-flex justify-content-between align-items-center header sticky">
+    <h5 class="mb-0"> Hello from the header </h5>
+    <nav class="">
+        <ul class="d-flex p-0 m-0">
+            <li class="d-flex px-2">
+                <a class="nav-link d-flex p-0" [routerLink]="['/account']" routerLinkActive="active"
+                    [routerLinkActiveOptions]="{exact:true}">
+                    <span class="nav-link-inner">Account</span></a>
+            </li>
+            <li class="d-flex  px-2">
+                <a class="nav-link d-flex p-0" [routerLink]="['/home']" routerLinkActive="active"
+                    [routerLinkActiveOptions]="{exact:true}">
+                    <span class="nav-link-inner">Home</span></a>
+            </li>
+            <li class="d-flex  px-2">
+                <a class="nav-link d-flex p-0" [routerLink]="['/account']" routerLinkActive="active"
+                    [routerLinkActiveOptions]="{exact:true}">
+                    <span class="nav-link-inner">Cource list</span></a>
+            </li>
+        </ul>
+    </nav>
+</div>

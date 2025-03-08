@@ -1,0 +1,19 @@
+<div class="couse">
+    <div class="fw-bold">
+        {{course.title}}
+    </div>
+    @if(!course.title){
+    <div>
+        <img src="" alt="image">
+    </div>
+    }@else {
+    <h2>No image avaliable</h2>
+    }
+    <div class="p-2">
+        desc
+    </div>
+
+    <div class="p-2">
+        <button class="btn btn-primary" (click)="viewCourse()"> view course</button>
+    </div>
+</div>

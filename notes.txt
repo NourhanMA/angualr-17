@@ -1,0 +1,9 @@
+RxJs ... 
+
+Reactive extension for javascript
+
+What is Reactive programming?
+Data stream in plain javascript ... 
+
+Why RxJS?
+ - 
