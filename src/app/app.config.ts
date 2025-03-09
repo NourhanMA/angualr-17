@@ -1,5 +1,5 @@
 import { ApplicationConfig } from '@angular/core';
-import { provideRouter, withComponentInputBinding } from '@angular/router';
+import { provideRouter, withComponentInputBinding, withInMemoryScrolling } from '@angular/router';
 
 import { routes } from './app.routes';
 import { provideTranslateService } from './translate.config';
@@ -10,7 +10,9 @@ import {
 
 export const appConfig: ApplicationConfig = {
   providers: [
-    provideRouter(routes, withComponentInputBinding()),
+    provideRouter(routes, withComponentInputBinding(),withInMemoryScrolling({
+      scrollPositionRestoration: "top",
+    })),
     provideHttpClient(withInterceptorsFromDi()),
     provideTranslateService(),
   ],
